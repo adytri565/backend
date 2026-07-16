@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: logisync-ai
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn gateway.app:app
